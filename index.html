@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>中国象棋（单机版）</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app">
+      <!-- 登录覆盖层 -->
+      <div id="loginOverlay" class="login-overlay" role="dialog" aria-modal="true" style="display:none;">
+        <div class="login-box">
+          <h2>内网访问认证</h2>
+          <p class="desc">请使用分配的账户登录（支持角色：管理员 / 普通用户 / 访客）</p>
+          <div class="row"><input id="loginUser" type="text" placeholder="用户名" /></div>
+          <div class="row"><input id="loginPass" type="password" placeholder="密码" /></div>
+          <div class="row"><button id="loginBtn">登录</button></div>
+          <div id="errorBox" class="error-box" style="display:none;"></div>
+        </div>
+      </div>
+
+      <header class="app-header">
+        <h1>中国象棋（内网单机版）</h1>
+        <div class="status-bar">
+          <span id="turnStatus">回合：红方</span>
+          <span id="checkStatus"></span>
+          <span id="gameStatus"></span>
+        </div>
+      </header>
+
+      <main class="app-main">
+        <section class="board-section">
+          <canvas id="boardCanvas" width="720" height="800" aria-label="中国象棋棋盘"></canvas>
+          <canvas id="effectsCanvas" class="effects-canvas"></canvas>
+        </section>
+
+        <aside class="sidebar">
+          <div class="controls">
+            <button id="newGameBtn">新开一局</button>
+            <button id="undoBtn">悔棋</button>
+            <button id="redoBtn">重做</button>
+          </div>
+          <div class="storage-controls">
+            <h3>状态保存 / 读取</h3>
+            <div class="row">
+              <button id="saveLocalBtn">保存到本地存储</button>
+              <button id="loadLocalBtn">从本地存储读取</button>
+            </div>
+            <div class="row">
+              <button id="exportBtn">导出为JSON文件</button>
+              <label class="file-label">
+                导入JSON文件
+                <input id="importFile" type="file" accept="application/json" />
+              </label>
+            </div>
+          </div>
+
+          <div class="help">
+            <h3>操作指引</h3>
+            <ul>
+              <li>同一设备双人轮流走子。</li>
+              <li>用鼠标点击棋子，再点击目标位置完成走子。</li>
+              <li>高亮点为合法落点；禁止“飞将”。</li>
+              <li>支持悔棋/重做、保存/读取对局。</li>
+              <li>移动与规则均有错误处理与日志记录。</li>
+            </ul>
+          </div>
+
+          <div class="log">
+            <h3>系统日志</h3>
+            <div id="logPanel" class="log-panel" aria-live="polite"></div>
+          </div>
+
+          <div class="perf">
+            <h3>性能看板</h3>
+            <div id="perfBox" class="perf-box"></div>
+          </div>
+      </aside>
+    </main>
+
+    <footer class="app-footer">
+      <span>无需联网，可直接在内网环境运行。打开本文件即可。</span>
+    </footer>
+    <div id="successToast" class="success-toast" style="display:none;"></div>
+    </div>
+
+    <!-- 前端配置与核心模块 -->
+    <script src="js/config.js"></script>
+    <script src="js/errors.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/logger.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/rules.js"></script>
+    <script src="js/engine.js"></script>
+    <script src="js/feedback.js"></script>
+    <script src="js/metrics.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>

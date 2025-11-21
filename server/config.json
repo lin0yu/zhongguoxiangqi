@@ -1,0 +1,21 @@
+{
+  "serverHost": "0.0.0.0",
+  "serverPort": 8080,
+
+  "users": [
+    { "username": "admin", "password": "123456", "role": "admin" },
+    { "username": "user", "password": "123456", "role": "user" },
+    { "username": "guest", "password": "123456", "role": "guest" }
+  ],
+
+  "ipWhitelistEnabled": false,
+  "macWhitelistEnabled": false,
+  "ipWhitelist": [],
+  "macWhitelist": [],
+
+  "security": {
+    "failedLoginAlertThreshold": 5,
+    "sessionSecret": "change_this_secret",
+    "sessionMaxAgeMs": 86400000
+  }
+}

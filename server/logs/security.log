@@ -1,0 +1,21 @@
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:07:14.814Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763737634814}
+[REPORT] 2025-11-21T15:07:14.819Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"啊啊啊"},"ts":1763737634819}
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:19:10.624Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763738350624}
+[REPORT] 2025-11-21T15:19:10.628Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"user"},"ts":1763738350628}
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:21:18.756Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763738478755}
+[REPORT] 2025-11-21T15:21:18.763Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"user"},"ts":1763738478756}
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:21:26.264Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763738486264}
+[REPORT] 2025-11-21T15:21:26.268Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"user"},"ts":1763738486265}
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:23:39.811Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763738619810}
+[REPORT] 2025-11-21T15:23:39.814Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"admin"},"ts":1763738619811}
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:23:50.115Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763738630115}
+[REPORT] 2025-11-21T15:23:50.119Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"admin"},"ts":1763738630116}
+[DENY] IP/MAC failed ip=::1 mac=null
+[REPORT] 2025-11-21T15:23:50.967Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"reason":"IP或MAC未授权"},"ts":1763738630966}
+[REPORT] 2025-11-21T15:23:50.970Z ::1 {"code":"AUTH_FAIL","message":"登录失败","ctx":{"user":"admin"},"ts":1763738630968}
